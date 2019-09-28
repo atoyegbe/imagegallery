@@ -2,17 +2,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
+    color: white;
 }
 
-
-
-
+h1 {
+    padding: 30px;
+    width: 200px;
+    border-bottom: 2px solid white;
+    border-right: 2px dotted white;
+}
 
 main {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
+    width: 900px;
     border: 2px solid rgb(247, 240, 240);
     height: auto;
 }
@@ -32,4 +36,14 @@ main > .card {
     height: 250px;
     border: 1px solid white;
     background-color: black;
+}
+
+aside {
+    border: 2px solid white;
+    height: 100vh;
+    width: 420px;
+    top: 0 !important;
+    position: fixed;
+    margin-left: 920px;
+
 }
