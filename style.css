@@ -13,9 +13,8 @@ h1 {
 }
 
 main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     width: 900px;
     border: 2px solid rgb(247, 240, 240);
     height: auto;
@@ -24,7 +23,7 @@ main {
 main > .card {
     border: 2px solid white;
     margin: 15px;
-    width: 400px;
+    width: auto;
     height: 400px;
     background-color: white;
     text-align: center;
@@ -45,5 +44,33 @@ aside {
     top: 0 !important;
     position: fixed;
     margin-left: 920px;
-
 }
+footer {
+    background-color: grey;
+    color: aliceblue;
+}
+@media screen and (max-width: 650px) {
+  body {
+      background-color: royalblue;
+  }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+
+    main > .card {
+        height: 300px;
+    }
+
+    .card > .img-card {
+        height: 250px;
+    }
+
+    aside {
+        display: none;
+    }
+}
+
